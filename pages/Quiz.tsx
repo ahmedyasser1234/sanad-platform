@@ -101,10 +101,10 @@ const Quiz: React.FC = () => {
     if (correct) {
       setLocalScore(prev => prev + 1);
       setMascotState('happy');
-      if (audioReady) await syncSpeech("كفو يا بطل! إجابة صحيحة مية بالمية! 👏");
+      if (audioReady) await syncSpeech("كفو يا بطل! إجابة صحيحة مية بالمية!");
     } else {
       setMascotState('sad');
-      if (audioReady) await syncSpeech("لا تشيل هم.. ركز في الجاي! 💪");
+      if (audioReady) await syncSpeech("لا تشيل هم.. ركز في الجاي! ");
     }
     
     submitAnswer(collegeId, testIdx, correct);

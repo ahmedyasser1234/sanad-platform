@@ -62,28 +62,28 @@ export const COLLEGES: College[] = [
   { 
     id: 'medicine', 
     name: 'كلية الطب', 
-    icon: '🏥', 
+    icon: '', 
     bg: 'https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1000',
     tests: generateTests('medicine', 'الطب')
   },
   { 
     id: 'applied-science', 
     name: 'كلية العلوم التطبيقية', 
-    icon: '🔬', 
+    icon: '', 
     bg: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&q=80&w=1000',
     tests: generateTests('applied-science', 'العلوم التطبيقية')
   },
   { 
     id: 'nursing', 
     name: 'كلية التمريض', 
-    icon: '🩺', 
+    icon: '', 
     bg: 'https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=1000',
     tests: generateTests('nursing', 'التمريض')
   },
   { 
     id: 'business', 
     name: 'كلية الأعمال', 
-    icon: '📊', 
+    icon: '', 
     bg: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1000',
     tests: generateTests('business', 'إدارة الأعمال')
   }
@@ -95,9 +95,9 @@ export const JOURNEYS = {
     title: 'سند معك',
     description: 'رفيقك الذكي في رحلتك التعليمية وسوف تقدر كل الخدمات الخاصة في مكان واحد التعليمي والشخصي.',
     cards: [
-      { id: 'about', title: 'تعرف على سند 🔍', path: '/journey/about', icon: '🔍' },
-      { id: 'services', title: 'خدماتي مع سند 🛠️', path: '/journey/services', icon: '🛠️' },
-      { id: 'ai', title: 'تحدث مع سند AI 🚀', path: '/journey/ai', icon: '🤖' }
+      { id: 'about', title: 'تعرف على سند ', path: '/journey/about', icon: '🔍' },
+      { id: 'services', title: 'خدماتي مع سند ', path: '/journey/services', icon: '🛠️' },
+      { id: 'ai', title: 'تحدث مع سند AI ', path: '/journey/ai', icon: '🤖' }
     ]
   },
   VALUES_JOURNEY: {
@@ -105,8 +105,8 @@ export const JOURNEYS = {
     title: 'رحلتي القيمية',
     description: 'الأهداف والطموحات تواصلك تؤسس لشخصية قوية ملهمة ومنتجة.',
     cards: [
-      { id: 'commitments', title: 'الالتزام القيمي 🤝', path: '/journey/values-commit', icon: '🤝' },
-      { id: 'programs', title: 'البرامج القيمية 🌟', path: '/journey/values-programs', icon: '🌟' }
+      { id: 'commitments', title: 'الالتزام القيمي ', path: '/journey/values-commit', icon: '🤝' },
+      { id: 'programs', title: 'البرامج القيمية ', path: '/journey/values-programs', icon: '🌟' }
     ]
   },
   ACADEMIC_JOURNEY: {
@@ -114,9 +114,9 @@ export const JOURNEYS = {
     title: 'رحلتي الأكاديمية',
     description: 'حل التخصصات ومن خلال الاختبار تساعدك على معرفة الكلية والقدرات والمهارات وتوجهك بشكل سليم.',
     cards: [
-      { id: 'registration', title: 'التسجيل والإرشاد 📝', path: '/journey/registration', icon: '📝' },
-      { id: 'colleges', title: 'الكليات 🏛️', path: '/colleges', icon: '🏛️' },
-      { id: 'skills', title: 'المهارات الأساسية ⚡', path: '/journey/skills', icon: '⚡' }
+      { id: 'registration', title: 'التسجيل والإرشاد ', path: '/journey/registration', icon: '📝' },
+      { id: 'colleges', title: 'الكليات ', path: '/colleges', icon: '🏛️' },
+      { id: 'skills', title: 'المهارات الأساسية ', path: '/journey/skills', icon: '⚡' }
     ]
   },
   FINANCIAL_JOURNEY: {
@@ -124,9 +124,9 @@ export const JOURNEYS = {
     title: 'رحلتي في المنح والحلول المالية',
     description: 'تقدر تعرف أنواع المنح المتاحة، وتفهم التزاماتك المالية، وتكتشف حلول تساعدك في رحلتك الجامعية.',
     cards: [
-      { id: 'scholarships', title: 'المنح الدراسية 🎓', path: '/journey/scholarships', icon: '🎓' },
-      { id: 'commitments', title: 'الالتزامات المالية 💰', path: '/journey/financial-commit', icon: '💰' },
-      { id: 'solutions', title: 'الحلول المالية 🧮', path: '/journey/financial-solutions', icon: '🧮' }
+      { id: 'scholarships', title: 'المنح الدراسية ', path: '/journey/scholarships', icon: '🎓' },
+      { id: 'commitments', title: 'الالتزامات المالية ', path: '/journey/financial-commit', icon: '💰' },
+      { id: 'solutions', title: 'الحلول المالية ', path: '/journey/financial-solutions', icon: '🧮' }
     ]
   },
   CAMPUS_LIFE: {
@@ -134,9 +134,9 @@ export const JOURNEYS = {
     title: 'رحلتي في الحياة الجامعية',
     description: 'الحياة الجامعية مليانة فرص للتطوع، القيادة، وتطوير المهارات الشخصية والاجتماعية.',
     cards: [
-      { id: 'leadership', title: 'المهارات والقيادة 🧠', path: '/journey/leadership', icon: '🧠' },
-      { id: 'volunteer', title: 'العمل التطوعي 🤲', path: '/journey/volunteer', icon: '🤲' },
-      { id: 'services', title: 'الخدمات الطلابية 🏫', path: '/journey/student-services', icon: '🏫' }
+      { id: 'leadership', title: 'المهارات والقيادة ', path: '/journey/leadership', icon: '🧠' },
+      { id: 'volunteer', title: 'العمل التطوعي ', path: '/journey/volunteer', icon: '🤲' },
+      { id: 'services', title: 'الخدمات الطلابية ', path: '/journey/student-services', icon: '🏫' }
     ]
   }
 };
