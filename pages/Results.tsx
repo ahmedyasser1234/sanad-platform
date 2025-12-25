@@ -68,10 +68,10 @@ const Results: React.FC = () => {
 
   useEffect(() => {
     const feedbackText = isPerfect
-      ? `كفووو يا بطل! نتيجة كاملة تبيض الوجه، أنت جاهز للمستوى اللي بعده! 🚀`
+      ? `كفووو يا بطل! نتيجة كاملة تبيض الوجه، أنت جاهز للمستوى اللي بعده! `
       : didPass 
         ? `كفو يا بطل! رفعت راسي وفتحت المستوى الجديد.. لكن تقدر تجيب الكاملة!`
-        : `بداية موفقة يا بطل، حاول مرة ثانية عشان تفتح مستويات جديدة! 💪`;
+        : `بداية موفقة يا بطل، حاول مرة ثانية عشان تفتح مستويات جديدة! `;
     
     const timer = setTimeout(() => syncSpeech(feedbackText), 800);
     return () => {
@@ -144,15 +144,15 @@ const Results: React.FC = () => {
 
         <div className="mt-20 flex flex-col sm:flex-row gap-6 w-full max-w-2xl justify-center px-6">
            <button onClick={() => navigate(`/`)} className="flex-1 bg-white text-slate-600 px-12 py-5 text-xl font-black rounded-[2.5rem] border-2 border-slate-100 shadow-xl hover:bg-slate-50 transition-all flex items-center justify-center gap-3">
-            <span>🏠</span> العودة للرئيسية
+            <span></span> العودة للرئيسية
           </button>
           {isPerfect ? (
             <button onClick={() => navigate(`/college/${quizData?.collegeId}/tests`)} className="flex-1 bg-[#00c37a] text-white px-12 py-5 text-xl font-black rounded-[2.5rem] shadow-[0_8px_0_0_#008f5d] hover:brightness-110 active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-3">
-              <span>🚀</span> المستوى التالي
+              <span></span> المستوى التالي
             </button>
           ) : (
             <button onClick={() => navigate(`/quiz/${quizData?.collegeId}/${quizData?.testIndex}`)} className="flex-1 bg-amber-500 text-white px-12 py-5 text-xl font-black rounded-[2.5rem] shadow-[0_8px_0_0_#d97706] hover:brightness-110 active:translate-y-1 active:shadow-none transition-all flex items-center justify-center gap-3">
-              <span>🔄</span> إعادة الاختبار
+              <span></span> إعادة الاختبار
             </button>
           )}
         </div>
