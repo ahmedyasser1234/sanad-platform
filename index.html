@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>منصة سند | Sanad Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sand-bg: #f5eadc;
+            --accent-green-start: #00e28f;
+            --accent-green-end: #00c37a;
+            --text-dark: #1A2B34;
+            --off-white: #f8fafc;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: var(--sand-bg);
+            background-image: 
+                linear-gradient(180deg, rgba(255,255,255,0.5) 0%, transparent 100%),
+                radial-gradient(at 0% 0%, rgba(0, 226, 143, 0.08) 0%, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(26, 43, 52, 0.05) 0%, transparent 50%);
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Lighter Green Gradient from left to right as requested (#00e28f to #00c37a) */
+        .bg-sanad-green {
+            background: linear-gradient(to left, #00e28f, #00c37a);
+        }
+
+        /* Inverted hover behavior: Solid to Transparent/Border */
+        .btn-sanad-interactive {
+            background: linear-gradient(to left, #00e28f, #00c37a);
+            color: #1A2B34;
+            border: 2px solid transparent;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .btn-sanad-interactive:hover {
+            background: transparent !important;
+            border-color: #00c37a;
+            color: #00c37a;
+        }
+
+        /* Glassmorphism with Blur */
+        .glass-nav {
+            background: rgba(26, 43, 52, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.75);
+            backdrop-filter: blur(16px);
+            border-radius: 2.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.9);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Transition Helper */
+        .transition-all {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-green-end);
+            border-radius: 10px;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.11.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "@google/genai": "https://esm.sh/@google/genai@^1.34.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="antialiased">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
