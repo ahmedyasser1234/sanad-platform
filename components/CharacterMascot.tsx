@@ -62,7 +62,7 @@ const CharacterMascot: React.FC<CharacterMascotProps> = ({
               <rect x="204" y="450" width="36" height="55" rx="18" fill="#8B5E3C" />
             </g>
 
-            {/* Head – SCALED PROPERLY */}
+            {/* Head – scaled */}
             <g transform="translate(110 55) scale(1.18)">
               {/* Shemagh */}
               <g transform="scale(1.05) translate(-5 -5)">
@@ -107,18 +107,23 @@ const CharacterMascot: React.FC<CharacterMascotProps> = ({
                 strokeLinecap="round"
               />
 
-              {/* Closed Eye */}
-              <motion.path
-                d="M50 130 Q65 140 80 130"
-                stroke="#222"
-                strokeWidth="5"
-                fill="none"
-                strokeLinecap="round"
-                animate={{ scaleY: [1, 0.1, 1] }}
-                transition={{ duration: 0.2, repeat: Infinity, repeatDelay: 4 }}
+              {/* LEFT EYE */}
+              <circle cx="55" cy="130" r="9" fill="white" />
+              <motion.circle
+                cx="55"
+                cy="130"
+                r="4.5"
+                fill="#111"
+                animate={{ cx: [52, 58, 55] }}
+                transition={{
+                  duration: 2.5,
+                  repeat: Infinity,
+                  repeatType: 'mirror',
+                  ease: 'easeInOut',
+                }}
               />
 
-              {/* Open Eye */}
+              {/* RIGHT EYE */}
               <circle cx="110" cy="130" r="9" fill="white" />
               <motion.circle
                 cx="110"
